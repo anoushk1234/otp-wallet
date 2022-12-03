@@ -13,9 +13,7 @@ const MainLayout = ({ children }: any) => {
         "https://eth-mainnet.g.alchemy.com/v2/ilIlpItblowwFDd3e73G_4a6Lk5dGb2U",
         1
       );
-      let name = await provider.lookupAddress(
-        "0x99Ec99FCdAd66Ca801DEf23b432500fF045251f9"
-      );
+      let name = await provider.lookupAddress(address!);
       setEns(name!);
       console.log(name);
     }
